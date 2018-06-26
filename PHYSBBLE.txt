@@ -1,0 +1,30 @@
+:ClrHome
+:While 0
+:INTRO AND PREPARE ∟KEYS
+:1-3→VARS, 4→ANS, 5→LOOP AND ∟KEYS SETUP
+:End
+:Output(3,8,"THE PHYSICS")
+:Output(4,12,"BIBLE")
+:Output(8,4,"BY CAMERON RODRIGUEZ")
+:Output(9,5,"ROD.CAM2014+DEV AT")
+:Output(10,15,"GMAIL.COM")
+:Wait 3
+:SetUpEditor KEYS,PHVAR
+:5→dim(∟PHVAR)
+:105→dim(∟KEYS)
+:26→∟KEYS(26)
+:For(∟PHVAR(5),10,100,10)
+:(∟PHVAR(5)+1)→∟KEYS(∟PHVAR(5)+1)
+:(∟PHVAR(5)+2)→∟KEYS(∟PHVAR(5)+2)
+:(∟PHVAR(5)+3)→∟KEYS(∟PHVAR(5)+3)
+:(∟PHVAR(5)+4)→∟KEYS(∟PHVAR(5)+4)
+:(∟PHVAR(5)+5)→∟KEYS(∟PHVAR(5)+5)
+:End
+:0→∟PHVAR(5)
+:While ∟PHVAR(5)≠0
+
+:End
+:SetUpEditor
+:Archive ∟PHVAR
+:Archive ∟KEYS
+:ClrHome
