@@ -11,7 +11,8 @@ An extensive list of features to be implemented before the v1.0.0 release.
   - [ ] Time: *dist, accel, init. vel, final vel*
 - [ ] Run calculations
 - [ ] Give user option to save data after calculation to a variable
-- [ ] Delete variables in ∟PHVAR(1 through 4) after completion
+- [ ] Give user option to restart program
+- [ ] Collapse ∟PHVAR after completion
 
 ## Calculation Steps
 
