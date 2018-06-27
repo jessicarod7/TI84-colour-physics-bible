@@ -7,7 +7,7 @@
 :Output(4,12,"BIBLE")
 :Output(7,4,"BY CAMERON RODRIGUEZ")
 :Output(9,5,"ROD.CAM2014+DEV AT")
-:Output(10,15,"GMAIL.COM")
+:Output(10,10,"GMAIL.COM")
 :Wait 2
 :SetUpEditor PHVAR
 :5→dim(⌊PHVAR)
@@ -25,53 +25,135 @@
 :Menu("SOLVE FOR?"," FINAL VELOCITY",F1," INITIAL VELOCITY",I1," ACCELERATION",A1," TIME",T1," RETURN TO MAIN MENU",ST)
 :Lbl F1
 :
+:Goto SA
 :Lbl I1
 :
+:Goto SA
 :Lbl A1
 :
+:Goto SA
 :Lbl T1
 :
+:Goto SA
 :Lbl F
 :Menu("SOLVE FOR?"," DISTANCE",D2," INITIAL VELOCITY",I2," ACCELERATION",A2," TIME",T2," RETURN TO MAIN MENU",ST)
 :Lbl D2
 :
+:Goto SA
 :Lbl I2
 :
+:Goto SA
 :Lbl A2
 :
+:Goto SA
 :Lbl T2
 :
+:Goto SA
 :Lbl I
 :Menu("SOLVE FOR?"," DISTANCE",D3," FINAL VELOCITY",F3," ACCELERATION",A3," TIME",T3," RETURN TO MAIN MENU",ST)
 :Lbl D3
 :
+:Goto SA
 :Lbl F3
 :
+:Goto SA
 :Lbl A3
 :
+:Goto SA
 :Lbl T3
 :
+:Goto SA
 :Lbl A
 :Menu("SOLVE FOR?"," DISTANCE",D4," FINAL VELOCITY",F4," INITIAL VELOCITY",I4," TIME",T4," RETURN TO MAIN MENU",ST)
 :Lbl D4
 :
+:Goto SA
 :Lbl F4
 :
+:Goto SA
 :Lbl I4
 :
+:Goto SA
 :Lbl T4
 :
+:Goto SA
 :Lbl T
 :Menu("SOLVE FOR?"," DISTANCE",D5," FINAL VELOCITY",F5," INITIAL VELOCITY",I5," ACCELERATION",A5," RETURN TO MAIN MENU",ST)
 :Lbl D5
 :
+:Goto SA
 :Lbl F5
 :
+:Goto SA
 :Lbl I5
 :
+:Goto SA
 :Lbl A5
 :
-
+:Lbl SA
+:Output(2,4,"TO SAVE YOUR ANSWER,")
+:Output(3,3,"TAP A VARIABLE WITHOUT")
+:Output(4,12,"ALPHA")
+:Output(7,8,"TO NOT SAVE,")
+:Output(8,9,"PRESS CLEAR")
+:Repeat ⌊PHVAR(5)
+:getKey→⌊PHVAR(5)
+:End
+:If ⌊PHVAR(5)=41
+:⌊PHVAR(4)→A
+:If ⌊PHVAR(5)=42
+:⌊PHVAR(4)→B
+:If ⌊PHVAR(5)=43
+:⌊PHVAR(4)→C
+:If ⌊PHVAR(5)=51
+:⌊PHVAR(4)→D
+:If ⌊PHVAR(5)=52
+:⌊PHVAR(4)→E
+:If ⌊PHVAR(5)=53
+:⌊PHVAR(4)→F
+:If ⌊PHVAR(5)=54
+:⌊PHVAR(4)→G
+:If ⌊PHVAR(5)=55
+:⌊PHVAR(4)→H
+:If ⌊PHVAR(5)=61
+:⌊PHVAR(4)→I
+:If ⌊PHVAR(5)=62
+:⌊PHVAR(4)→J
+:If ⌊PHVAR(5)=63
+:⌊PHVAR(4)→K
+:If ⌊PHVAR(5)=64
+:⌊PHVAR(4)→L
+:If ⌊PHVAR(5)=65
+:⌊PHVAR(4)→M
+:If ⌊PHVAR(5)=71
+:⌊PHVAR(4)→N
+:If ⌊PHVAR(5)=72
+:⌊PHVAR(4)→O
+:If ⌊PHVAR(5)=73
+:⌊PHVAR(4)→P
+:If ⌊PHVAR(5)=74
+:⌊PHVAR(4)→Q
+:If ⌊PHVAR(5)=75
+:⌊PHVAR(4)→R
+:If ⌊PHVAR(5)=81
+:⌊PHVAR(4)→S
+:If ⌊PHVAR(5)=82
+:⌊PHVAR(4)→T
+:If ⌊PHVAR(5)=83
+:⌊PHVAR(4)→U
+:If ⌊PHVAR(5)=84
+:⌊PHVAR(4)→V
+:If ⌊PHVAR(5)=85
+:⌊PHVAR(4)→W
+:If ⌊PHVAR(5)=91
+:⌊PHVAR(4)→X
+:If ⌊PHVAR(5)=92
+:⌊PHVAR(4)→Y
+:If ⌊PHVAR(5)=93
+:⌊PHVAR(4)→Z
+:If ⌊PHVAR(5)=94
+:⌊PHVAR(4)→θ
+:ClrHome
 :Menu("RESTART PROGRAM?"," YES",ST," NO",QU)
 :Lbl QU
 :Menu("ARE YOU SURE?"," YES",YE," NO",ST)

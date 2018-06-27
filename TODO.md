@@ -1,6 +1,6 @@
 # To Do
 
-An extensive list of features to be implemented before the v1.0.0 release.
+An list of features to be implemented before the v1.0.0 release.
 
 - [x] Add options to solve without a given variable
 - [x] Add options under each variable to calculate for the desired variable
@@ -9,7 +9,7 @@ An extensive list of features to be implemented before the v1.0.0 release.
   - [x] Initial velocity: *dist, accel, final vel, time*
   - [x] Acceleration: *dist, init. vel, final vel, time*
   - [x] Time: *dist, accel, init. vel, final vel*
-- [ ] Give user option to save data after calculation to a variable
+- [x] Give user option to save data after calculation to a variable
 - [X] Give user option to restart program
 - [x] Collapse ⌊PHVAR after completion
 
