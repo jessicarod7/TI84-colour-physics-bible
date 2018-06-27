@@ -2,17 +2,16 @@
 
 An extensive list of features to be implemented before the v1.0.0 release.
 
-- [ ] Add options for to solve without a given variable
+- [x] Add options to solve without a given variable
 - [ ] Add options under each variable to calculate for the desired variable
   - [ ] Distance: *accel, init. vel, final vel, time*
   - [ ] Final velocity: *dist, accel, init. vel, time*
   - [ ] Initial velocity: *dist, accel, final vel, time*
   - [ ] Acceleration: *dist, init. vel, final vel, time*
   - [ ] Time: *dist, accel, init. vel, final vel*
-- [ ] Run calculations
 - [ ] Give user option to save data after calculation to a variable
-- [ ] Give user option to restart program
-- [ ] Collapse ∟PHVAR after completion
+- [X] Give user option to restart program
+- [x] Collapse ∟PHVAR after completion
 
 ## Calculation Steps
 
