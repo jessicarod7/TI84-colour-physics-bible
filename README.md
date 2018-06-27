@@ -8,7 +8,7 @@ This is a program designed for the **TI-84+ CE** to help you solve for different
 - Final velocity
 - Time
 
-This program is written in TI-BASIC, and currently under development. Feel free to suggest improvements and I'll look at implementing them.
+This program is written in TI-BASIC, and currently under development. Feel free to suggest improvements and I'll look at implementing them. To view current progress towards v1.0.0, [click here](TODO.md).
 
 ## License
 
