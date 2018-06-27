@@ -1,2 +1,3 @@
-# Don't track the actual program file
+# Don't track the actual program file or its zipped container
 *.8xp
+*.zip
