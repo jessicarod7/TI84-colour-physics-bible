@@ -22,8 +22,9 @@ Output(2,5,"ON THE NEXT SCREEN")
 Output(3,2,"SELECT THE VARIABLE YOU")
 Output(4,8,"DON'T HAVE.")
 Output(5,4,"(NOT WHAT YOU WANT)")
-Output(7,3,"ALL ANSWERS WILL DISPLAY")
-Output(8,4,"6 DIGITS AFTER DECIMAL")
+Output(7,2,"ALL ANSWERS WILL DISPLAY")
+Output(8,3,"6 DIGITS AFTER DECIMAL")
+Output(10,2,"VARIABLE U  WILL BE USED")
 Wait 3
 ClrHome
 While 0
@@ -40,9 +41,12 @@ Menu("SOLVE FOR?"," FINAL VELOCITY",F1," INITIAL VELOCITY",I1," ACCELERATION",A1
 Lbl F1
 Disp "FIND FINAL V., NO DIST."
 Disp " "
-Input "INITIAL V.? (m/s)",⌊PHVAR(1)
-Input "ACCEL.? (m/s²)",⌊PHVAR(2)
-Input "TIME? (s)",⌊PHVAR(3)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
 round(((⌊PHVAR(2)*⌊PHVAR(3))+⌊PHVAR(1)),6)→⌊PHVAR(4)
 Output(8,1,"FINAL V. =")
 Output(8,12,⌊PHVAR(4))

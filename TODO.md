@@ -18,7 +18,7 @@ An list of features to be implemented before the v1.0.0 release.
 This is a fully-fledged list of the requirements for each section of the calculations
 
 - [ ] **Distance**
-  - [ ] *Final Velocity* (D,F1)
+  - [x] *Final Velocity* (D,F1)
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
