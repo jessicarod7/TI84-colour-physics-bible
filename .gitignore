@@ -1,3 +1,7 @@
 # Don't track the actual program file or its zipped container
 *.8xp
 *.zip
+
+# Don't track local files used for dev work
+*.jpg
+*.vscode

@@ -19,9 +19,9 @@ This is a fully-fledged list of the requirements for each section of the calcula
 
 - [ ] **Distance**
   - [ ] *Final Velocity* (D,F1)
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
   - [ ] *Initial Velocity* (D,I1)
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
     - [ ] Run calculation and store value as ⌊PHVAR(4)

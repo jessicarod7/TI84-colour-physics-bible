@@ -1,7 +1,7 @@
 ClrHome
 While 0
-INTRO AND PREPARE ⌊KEYS
-1-3→VARS, 4→ANS, 5→VAR STORAGE
+"=INTRO AND PREPARE ⌊KEYS="
+"=1-3→VARS, 4→ANS, 5→VAR STORAGE="
 End
 Output(3,8,"THE PHYSICS")
 Output(4,12,"BIBLE")
@@ -11,91 +11,157 @@ Output(10,10,"GMAIL.COM")
 Wait 2
 SetUpEditor PHVAR
 5→dim(⌊PHVAR)
+
 Lbl ST
+While 0
+"=MAIN PGRM START="
+End
 0→⌊PHVAR(5)
 ClrHome
-Output(3,5,"ON THE NEXT SCREEN")
-Output(4,2,"SELECT THE VARIABLE YOU")
-Output(5,8,"DON'T HAVE.")
-Output(7,4,"(NOT WHAT YOU WANT)")
+Output(2,5,"ON THE NEXT SCREEN")
+Output(3,2,"SELECT THE VARIABLE YOU")
+Output(4,8,"DON'T HAVE.")
+Output(5,4,"(NOT WHAT YOU WANT)")
+Output(7,3,"ALL ANSWERS WILL DISPLAY")
+Output(8,4,"6 DIGITS AFTER DECIMAL")
+Wait 3
+ClrHome
+While 0
+"=MAIN.MENU="
+End
+Menu("MISSING?"," DISTANCE",D," FINAL VELOCITY",F," INITIAL VELOCITY",I," ACCELERATION",A," TIME",T," QUIT",QU)
+
+Lbl D
+While 0
+"=DIST SUB.MENU="
+End
+Menu("SOLVE FOR?"," FINAL VELOCITY",F1," INITIAL VELOCITY",I1," ACCELERATION",A1," TIME",T1," RETURN TO MAIN MENU",ST)
+
+Lbl F1
+Disp "FIND FINAL V., NO DIST."
+Disp " "
+Input "INITIAL V.? (m/s)",⌊PHVAR(1)
+Input "ACCEL.? (m/s²)",⌊PHVAR(2)
+Input "TIME? (s)",⌊PHVAR(3)
+round(((⌊PHVAR(2)*⌊PHVAR(3))+⌊PHVAR(1)),6)→⌊PHVAR(4)
+Output(8,1,"FINAL V. =")
+Output(8,12,⌊PHVAR(4))
+Output(9,23,"m/s")
 Wait 2
 ClrHome
-Menu("MISSING?"," DISTANCE",D," FINAL VELOCITY",F," INITIAL VELOCITY",I," ACCELERATION",A," TIME",T," QUIT",QU)
-Lbl D
-Menu("SOLVE FOR?"," FINAL VELOCITY",F1," INITIAL VELOCITY",I1," ACCELERATION",A1," TIME",T1," RETURN TO MAIN MENU",ST)
-Lbl F1
-
+Output(1,1,"FINAL V. =")
+Output(1,12,⌊PHVAR(4))
+Output(2,23,"m/s")
 Goto SA
+
 Lbl I1
 
 Goto SA
+
 Lbl A1
 
 Goto SA
+
 Lbl T1
 
 Goto SA
+
 Lbl F
+While 0
+"=FINAL V. SUB.MENU="
+End
 Menu("SOLVE FOR?"," DISTANCE",D2," INITIAL VELOCITY",I2," ACCELERATION",A2," TIME",T2," RETURN TO MAIN MENU",ST)
+
 Lbl D2
 
 Goto SA
+
 Lbl I2
 
 Goto SA
+
 Lbl A2
 
 Goto SA
+
 Lbl T2
 
 Goto SA
+
 Lbl I
+While 0
+"=INITIAL V. SUB.MENU="
+End
 Menu("SOLVE FOR?"," DISTANCE",D3," FINAL VELOCITY",F3," ACCELERATION",A3," TIME",T3," RETURN TO MAIN MENU",ST)
+
 Lbl D3
 
 Goto SA
+
 Lbl F3
 
 Goto SA
+
 Lbl A3
 
 Goto SA
+
 Lbl T3
 
 Goto SA
+
 Lbl A
+While 0
+"=ACCEL. SUB.MENU="
+End
 Menu("SOLVE FOR?"," DISTANCE",D4," FINAL VELOCITY",F4," INITIAL VELOCITY",I4," TIME",T4," RETURN TO MAIN MENU",ST)
+
 Lbl D4
 
 Goto SA
+
 Lbl F4
 
 Goto SA
+
 Lbl I4
 
 Goto SA
+
 Lbl T4
 
 Goto SA
+
 Lbl T
+While 0
+"=TIME SUB.MENU="
+End
 Menu("SOLVE FOR?"," DISTANCE",D5," FINAL VELOCITY",F5," INITIAL VELOCITY",I5," ACCELERATION",A5," RETURN TO MAIN MENU",ST)
+
 Lbl D5
 
 Goto SA
+
 Lbl F5
 
 Goto SA
+
 Lbl I5
 
 Goto SA
+
 Lbl A5
 
+
 Lbl SA
-Output(2,4,"TO SAVE YOUR ANSWER,")
-Output(3,3,"TAP A VARIABLE WITHOUT")
-Output(4,11,"ALPHA")
-Output(7,8,"TO NOT SAVE,")
-Output(8,9,"PRESS CLEAR")
+While 0
+"=SAVE.MENU="
+End
+Output(4,4,"TO SAVE YOUR ANSWER,")
+Output(5,3,"TAP A VARIABLE WITHOUT")
+Output(6,11,"ALPHA")
+Output(8,8,"TO NOT SAVE,")
+Output(9,9,"PRESS CLEAR")
 Repeat ⌊PHVAR(5)
 getKey→⌊PHVAR(5)
 End
@@ -154,10 +220,19 @@ If ⌊PHVAR(5)=93
 If ⌊PHVAR(5)=94
 ⌊PHVAR(4)→θ
 ClrHome
+
+While 0
+"=RESTART.MENU="
+"=QUIT.MENU="
+End
 Menu("RESTART PROGRAM?"," YES",ST," NO",QU)
 Lbl QU
 Menu("ARE YOU SURE?"," NO",ST," YES",YE)
+
 Lbl YE
+While 0
+"=PGRM SHUTDOWN="
+End
 0→dim(⌊PHVAR)
 SetUpEditor 
 Archive ⌊PHVAR
