@@ -2,6 +2,9 @@ ClrHome
 While 0
 "=INTRO AND PREPARE ⌊KEYS="
 "=1-3→VARS, 4→ANS, 5→VAR STORAGE="
+
+"=NOTE: NEGATIVE SIGNS ARE INVISIBLE IN VS CODE="
+"=THIS WILL BE INDICATED="
 End
 Output(3,8,"THE PHYSICS")
 Output(4,12,"BIBLE")
@@ -59,7 +62,26 @@ Output(2,23,"m/s")
 Goto SA
 
 Lbl I1
-
+Disp "FIND INITIAL V., NO DIST."
+Disp " "
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+While 0
+"=NEGATIVE BELOW="
+End
+round((­(⌊PHVAR(2)*⌊PHVAR(3))+⌊PHVAR(1)),6)→⌊PHVAR(4)
+Output(8,1,"INITIAL V. =")
+Output(8,14,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"INITIAL V. =")
+Output(1,14,⌊PHVAR(4))
+Output(2,23,"m/s")
 Goto SA
 
 Lbl A1
