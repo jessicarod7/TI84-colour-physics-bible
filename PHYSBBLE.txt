@@ -131,19 +131,68 @@ End
 Menu("SOLVE FOR?"," DISTANCE",D2," INITIAL VELOCITY",I2," ACCELERATION",A2," TIME",T2," RETURN TO MAIN MENU",ST)
 
 Lbl D2
-
+Disp "FIND DIST., NO FINAL V."
+Disp " "
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+round(((⌊PHVAR(1)*⌊PHVAR(2))+(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²))),6)→⌊PHVAR(4)
+Output(8,1,"DIST. =")
+Output(8,9,⌊PHVAR(4))
+Output(9,25,"m")
+Wait 2
+ClrHome
+Output(1,1,"DIST. =")
+Output(1,9,⌊PHVAR(4))
+Output(2,25,"m")
 Goto SA
 
 Lbl I2
-
+Disp "FIND INIT. V., NO FINAL V."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+round(((⌊PHVAR(1)-(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²)))/⌊PHVAR(3)),6)→⌊PHVAR(4)
+Output(8,1,"INITIAL V. =")
+Output(8,14,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"INITIAL V. =")
+Output(1,14,⌊PHVAR(4))
+Output(2,23,"m/s")
 Goto SA
 
 Lbl A2
-
+Disp "FIND ACCEL., NO FINAL V."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+round(((2*(⌊PHVAR(1)-(⌊PHVAR(2)*⌊PHVAR(3))))/((⌊PHVAR(3))²)),6)→⌊PHVAR(4)
+Output(8,1,"ACCEL. =")
+Output(8,10,⌊PHVAR(4))
+Output(9,22,"m/s²")
+Wait 2
+ClrHome
+Output(1,1,"ACCEL. =")
+Output(1,10,⌊PHVAR(4))
+Output(2,22,"m/s²")
 Goto SA
 
 Lbl T2
-
+Disp "NOT YET AVAILABLE"
+Wait 2
 Goto SA
 
 Lbl I

@@ -35,18 +35,18 @@ This is a fully-fledged list of the requirements for each section of the calcula
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
 - [ ] **Final Velocity**
-  - [ ] *Distance* (F,D2)
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Initial Velocity* (F,I2)
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Acceleration* (F,A2)
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
+  - [x] *Distance* (F,D2)
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [x] *Initial Velocity* (F,I2)
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [x] *Acceleration* (F,A2)
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
   - [ ] *Time* (F,T2)
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
     - [ ] Run calculation and store value as ⌊PHVAR(4)
