@@ -51,7 +51,7 @@ This is a fully-fledged list of the requirements for each section of the calcula
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-- [ ] **Initial Velocity**
+- [x] **Initial Velocity**
   - [x] *Distance* [I,D3]
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
@@ -64,10 +64,10 @@ This is a fully-fledged list of the requirements for each section of the calcula
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-  - [ ] *Time* [I,T3]
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
+  - [x] *Time* [I,T3]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
 - [ ] **Acceleration**
   - [ ] *Distance* [A,D4]
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
