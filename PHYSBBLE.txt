@@ -16,7 +16,7 @@ Lbl ST
 ClrHome
 Output(3,5,"ON THE NEXT SCREEN")
 Output(4,2,"SELECT THE VARIABLE YOU")
-Output(5,9,"DON'T HAVE.")
+Output(5,8,"DON'T HAVE.")
 Output(7,4,"(NOT WHAT YOU WANT)")
 Wait 2
 ClrHome
@@ -93,7 +93,7 @@ Lbl A5
 Lbl SA
 Output(2,4,"TO SAVE YOUR ANSWER,")
 Output(3,3,"TAP A VARIABLE WITHOUT")
-Output(4,12,"ALPHA")
+Output(4,11,"ALPHA")
 Output(7,8,"TO NOT SAVE,")
 Output(8,9,"PRESS CLEAR")
 Repeat ⌊PHVAR(5)
@@ -156,7 +156,7 @@ If ⌊PHVAR(5)=94
 ClrHome
 Menu("RESTART PROGRAM?"," YES",ST," NO",QU)
 Lbl QU
-Menu("ARE YOU SURE?"," YES",YE," NO",ST)
+Menu("ARE YOU SURE?"," NO",ST," YES",YE)
 Lbl YE
 0→dim(⌊PHVAR)
 SetUpEditor 
