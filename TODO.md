@@ -17,7 +17,7 @@ An list of features to be implemented before the v1.0.0 release.
 
 This is a fully-fledged list of the requirements for each section of the calculations
 
-- [ ] **Distance**
+- [x] **Distance**
   - [x] *Final Velocity* (D,F1)
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
@@ -26,14 +26,14 @@ This is a fully-fledged list of the requirements for each section of the calcula
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-  - [ ] *Acceleration* (D,A1)
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Time* (D,T1)
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
+  - [x] *Acceleration* (D,A1)
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [x] *Time* (D,T1)
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
 - [ ] **Final Velocity**
   - [ ] *Distance* (F,D2)
     - [ ] Request variables, and store as ⌊PHVAR(1-3)

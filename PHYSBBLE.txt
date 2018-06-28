@@ -85,11 +85,43 @@ Output(2,23,"m/s")
 Goto SA
 
 Lbl A1
-
+Disp "FIND ACCEL., NO DIST."
+Disp " "
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+round(((⌊PHVAR(1)-⌊PHVAR(2))/⌊PHVAR(3)),6)→⌊PHVAR(4)
+Output(8,1,"ACCEL. =")
+Output(8,10,⌊PHVAR(4))
+Output(9,22,"m/s²")
+Wait 2
+ClrHome
+Output(1,1,"ACCEL. =")
+Output(1,10,⌊PHVAR(4))
+Output(2,22,"m/s²")
 Goto SA
 
 Lbl T1
-
+Disp "FIND TIME, NO DIST."
+Disp " "
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(3)
+round(((⌊PHVAR(1)-⌊PHVAR(2))/⌊PHVAR(3)),6)→⌊PHVAR(4)
+Output(8,1,"TIME =")
+Output(8,8,⌊PHVAR(4))
+Output(9,25,"s")
+Wait 2
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
 Goto SA
 
 Lbl F
