@@ -200,7 +200,13 @@ U→⌊PHVAR(2)
 Input "ACCEL.? (m/s²) ",U
 U→⌊PHVAR(3)
 (0.5*⌊PHVAR(3))→⌊PHVAR(3)
+While 0
+"=NEGATIVE BELOW="
+End
 (­(⌊PHVAR(2)))→⌊PHVAR(2)
+While 0
+"=NEGATIVE BELOW="
+End
 (­(⌊PHVAR(1)))→⌊PHVAR(1)
 While 0
 "=THIS EQUATION USES THE="
@@ -224,15 +230,63 @@ End
 Menu("SOLVE FOR?"," DISTANCE",D3," FINAL VELOCITY",F3," ACCELERATION",A3," TIME",T3," RETURN TO MAIN MENU",ST)
 
 Lbl D3
-
+Disp "FIND DIST., NO INITIAL V."
+Disp " "
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+round(((⌊PHVAR(1)*⌊PHVAR(2))-(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²))),6)→⌊PHVAR(4)
+Output(8,1,"DIST. =")
+Output(8,9,⌊PHVAR(4))
+Output(9,25,"m")
+Wait 2
+ClrHome
+Output(1,1,"DIST. =")
+Output(1,9,⌊PHVAR(4))
+Output(2,25,"m")
 Goto SA
 
 Lbl F3
-
+Disp "FIND FINAL V., NO INIT. V."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+round(((⌊PHVAR(1)+(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²)))/⌊PHVAR(3)),6)→⌊PHVAR(4)
+Output(8,1,"FINAL V. =")
+Output(8,12,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"FINAL V. =")
+Output(1,12,⌊PHVAR(4))
+Output(2,23,"m/s")
 Goto SA
 
 Lbl A3
-
+Disp "FIND ACCEL., NO INIT. V."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+round((­((2*(⌊PHVAR(1)-(⌊PHVAR(2)*⌊PHVAR(3))))/((⌊PHVAR(3))²))),6)→⌊PHVAR(4)
+Output(8,1,"ACCEL. =")
+Output(8,10,⌊PHVAR(4))
+Output(9,22,"m/s²")
+Wait 2
+ClrHome
+Output(1,1,"ACCEL. =")
+Output(1,10,⌊PHVAR(4))
+Output(2,22,"m/s²")
 Goto SA
 
 Lbl T3

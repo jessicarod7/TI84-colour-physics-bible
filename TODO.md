@@ -18,87 +18,87 @@ An list of features to be implemented before the v1.0.0 release.
 This is a fully-fledged list of the requirements for each section of the calculations
 
 - [x] **Distance**
-  - [x] *Final Velocity* (D,F1)
+  - [x] *Final Velocity* [D,F1]
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-  - [x] *Initial Velocity* (D,I1)
+  - [x] *Initial Velocity* [D,I1]
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-  - [x] *Acceleration* (D,A1)
+  - [x] *Acceleration* [D,A1]
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-  - [x] *Time* (D,T1)
+  - [x] *Time* [D,T1]
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-- [ ] **Final Velocity**
-  - [x] *Distance* (F,D2)
+- [x] **Final Velocity**
+  - [x] *Distance* [F,D2]
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-  - [x] *Initial Velocity* (F,I2)
+  - [x] *Initial Velocity* [F,I2]
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-  - [x] *Acceleration* (F,A2)
+  - [x] *Acceleration* [F,A2]
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-  - [ ] *Time* (F,T2)
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
+  - [x] *Time* [F,T2]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
 - [ ] **Initial Velocity**
-  - [ ] *Distance* (I,D3)
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Final Velocity* (I,F3)
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Acceleration* (I,A3)
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Time* (I,T3)
+  - [x] *Distance* [I,D3]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [x] *Final Velocity* [I,F3]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [x] *Acceleration* [I,A3]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [ ] *Time* [I,T3]
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
     - [ ] Run calculation and store value as ⌊PHVAR(4)
     - [ ] Display result to user, delay, and return to main program
 - [ ] **Acceleration**
-  - [ ] *Distance* (A,D4)
+  - [ ] *Distance* [A,D4]
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
     - [ ] Run calculation and store value as ⌊PHVAR(4)
     - [ ] Display result to user, delay, and return to main program
-  - [ ] *Final Velocity* (A,F4)
+  - [ ] *Final Velocity* [A,F4]
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
     - [ ] Run calculation and store value as ⌊PHVAR(4)
     - [ ] Display result to user, delay, and return to main program
-  - [ ] *Initial Velocity* (A,I4)
+  - [ ] *Initial Velocity* [A,I4]
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
     - [ ] Run calculation and store value as ⌊PHVAR(4)
     - [ ] Display result to user, delay, and return to main program
-  - [ ] *Time* (A,T4)
+  - [ ] *Time* [A,T4]
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
     - [ ] Run calculation and store value as ⌊PHVAR(4)
     - [ ] Display result to user, delay, and return to main program
 - [ ] **Time**
-  - [ ] *Distance* (T,D5)
+  - [ ] *Distance* [T,D5]
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
     - [ ] Run calculation and store value as ⌊PHVAR(4)
     - [ ] Display result to user, delay, and return to main program
-  - [ ] *Final Velocity* (T,F5)
+  - [ ] *Final Velocity* [T,F5]
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
     - [ ] Run calculation and store value as ⌊PHVAR(4)
     - [ ] Display result to user, delay, and return to main program
-  - [ ] *Initial Velocity* (T,I5)
+  - [ ] *Initial Velocity* [T,I5]
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
     - [ ] Run calculation and store value as ⌊PHVAR(4)
     - [ ] Display result to user, delay, and return to main program
-  - [ ] *Acceleration* (T,A5)
+  - [ ] *Acceleration* [T,A5]
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
     - [ ] Run calculation and store value as ⌊PHVAR(4)
     - [ ] Display result to user, delay, and return to main program
