@@ -1,5 +1,7 @@
 # To Do
 
+**All features have been implemented, currently testing release candidates**
+
 An list of features to be implemented before the v1.0.0 release.
 
 - [x] Add options to solve without a given variable
@@ -85,20 +87,20 @@ This is a fully-fledged list of the requirements for each section of the calcula
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-- [ ] **Time**
-  - [ ] *Distance* [T,D5]
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Final Velocity* [T,F5]
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Initial Velocity* [T,I5]
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Acceleration* [T,A5]
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
+- [x] **Time**
+  - [x] *Distance* [T,D5]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [x] *Final Velocity* [T,F5]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [x] *Initial Velocity* [T,I5]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [x] *Acceleration* [T,A5]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
