@@ -327,7 +327,7 @@ round(((⌊PHVAR(2)+(√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))))/(2*⌊
 Output(7,1,"TIME =")
 Output(7,8,⌊PHVAR(4))
 Output(8,3,"OR")
-Output(8,8,⌊PHVAR(8))
+Output(8,8,⌊PHVAR(3))
 Output(9,25,"s")
 Wait 2
 ClrHome
@@ -387,8 +387,8 @@ End
 Output(5,1,"USE COMMON SENSE WHEN")
 Output(6,1,"SELECTING YOUR ANSWER")
 Output(7,1,"AND REMEMBER THE ORDER")
-Output(9,1,"(GENERALLY THE NEGATIVE)")
-Output(10,1,"(ANSWER IS WRONG)")
+Output(9,1,"(GENERALLY THE NEGATIVE")
+Output(10,1,"ANSWER IS WRONG)")
 Wait 3
 ClrHome
 Menu("WHICH ANSWER DO YOU WANT?","THE FIRST ONE",L4,"THE SECOND ONE",L3)
