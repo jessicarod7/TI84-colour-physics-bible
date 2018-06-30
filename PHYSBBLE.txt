@@ -15,7 +15,7 @@ Wait 2
 SetUpEditor PHVAR
 5→dim(⌊PHVAR)
 
-Lbl ST
+Lbl GO
 While 0
 "=MAIN PGRM START="
 End
@@ -39,7 +39,7 @@ Lbl D
 While 0
 "=DIST SUB.MENU="
 End
-Menu("SOLVE FOR?"," FINAL VELOCITY",F1," INITIAL VELOCITY",I1," ACCELERATION",A1," TIME",T1," RETURN TO MAIN MENU",ST)
+Menu("SOLVE FOR?"," FINAL VELOCITY",F1," INITIAL VELOCITY",I1," ACCELERATION",A1," TIME",T1," RETURN TO MAIN MENU",GO)
 
 Lbl F1
 Disp "FIND FINAL V., NO DIST."
@@ -128,7 +128,7 @@ Lbl F
 While 0
 "=FINAL V. SUB.MENU="
 End
-Menu("SOLVE FOR?"," DISTANCE",D2," INITIAL VELOCITY",I2," ACCELERATION",A2," TIME",T2," RETURN TO MAIN MENU",ST)
+Menu("SOLVE FOR?"," DISTANCE",D2," INITIAL VELOCITY",I2," ACCELERATION",A2," TIME",T2," RETURN TO MAIN MENU",GO)
 
 Lbl D2
 Disp "FIND DIST., NO FINAL V."
@@ -213,21 +213,26 @@ While 0
 "=QUADRATIC FORMULA="
 End
 round(((⌊PHVAR(2)+(√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))))/(2*⌊PHVAR(3))),6)→⌊PHVAR(4)
-Output(8,1,"TIME =")
-Output(8,8,⌊PHVAR(4))
+round(((⌊PHVAR(2)-(√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))))/(2*⌊PHVAR(3))),6)→⌊PHVAR(3)
+Output(7,1,"TIME =")
+Output(7,8,⌊PHVAR(4))
+Output(8,3,"OR")
+Output(8,8,⌊PHVAR(3))
 Output(9,25,"s")
 Wait 2
 ClrHome
 Output(1,1,"TIME =")
 Output(1,8,⌊PHVAR(4))
-Output(2,25,"s")
-Goto SA
+Output(2,3,"OR")
+Output(2,8,⌊PHVAR(3))
+Output(3,25,"s")
+Goto ST
 
 Lbl I
 While 0
 "=INITIAL V. SUB.MENU="
 End
-Menu("SOLVE FOR?"," DISTANCE",D3," FINAL VELOCITY",F3," ACCELERATION",A3," TIME",T3," RETURN TO MAIN MENU",ST)
+Menu("SOLVE FOR?"," DISTANCE",D3," FINAL VELOCITY",F3," ACCELERATION",A3," TIME",T3," RETURN TO MAIN MENU",GO)
 
 Lbl D3
 Disp "FIND DIST., NO INITIAL V."
@@ -318,21 +323,26 @@ While 0
 "=QUADRATIC FORMULA="
 End
 round(((⌊PHVAR(2)-(√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))))/(2*⌊PHVAR(3))),6)→⌊PHVAR(4)
-Output(8,1,"TIME =")
-Output(8,8,⌊PHVAR(4))
+round(((⌊PHVAR(2)+(√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))))/(2*⌊PHVAR(3))),6)→⌊PHVAR(4)
+Output(7,1,"TIME =")
+Output(7,8,⌊PHVAR(4))
+Output(8,3,"OR")
+Output(8,8,⌊PHVAR(8))
 Output(9,25,"s")
 Wait 2
 ClrHome
 Output(1,1,"TIME =")
 Output(1,8,⌊PHVAR(4))
-Output(2,25,"s")
-Goto SA
+Output(2,3,"OR")
+Output(2,8,⌊PHVAR(3))
+Output(3,25,"s")
+Goto ST
 
 Lbl A
 While 0
 "=ACCEL. SUB.MENU="
 End
-Menu("SOLVE FOR?"," DISTANCE",D4," FINAL VELOCITY",F4," INITIAL VELOCITY",I4," TIME",T4," RETURN TO MAIN MENU",ST)
+Menu("SOLVE FOR?"," DISTANCE",D4," FINAL VELOCITY",F4," INITIAL VELOCITY",I4," TIME",T4," RETURN TO MAIN MENU",GO)
 
 Lbl D4
 
@@ -354,7 +364,7 @@ Lbl T
 While 0
 "=TIME SUB.MENU="
 End
-Menu("SOLVE FOR?"," DISTANCE",D5," FINAL VELOCITY",F5," INITIAL VELOCITY",I5," ACCELERATION",A5," RETURN TO MAIN MENU",ST)
+Menu("SOLVE FOR?"," DISTANCE",D5," FINAL VELOCITY",F5," INITIAL VELOCITY",I5," ACCELERATION",A5," RETURN TO MAIN MENU",GO)
 
 Lbl D5
 
@@ -370,6 +380,34 @@ Goto SA
 
 Lbl A5
 
+Lbl ST
+While 0
+"=USED FOR [F,T2] AND [I,T3]"="
+End
+Output(5,1,"USE COMMON SENSE WHEN")
+Output(6,1,"SELECTING YOUR ANSWER")
+Output(7,1,"AND REMEMBER THE ORDER")
+Output(9,1,"(GENERALLY THE NEGATIVE)")
+Output(10,1,"(ANSWER IS WRONG)")
+Wait 3
+ClrHome
+Menu("WHICH ANSWER DO YOU WANT?","THE FIRST ONE",L4,"THE SECOND ONE",L3)
+While 0
+"=INTERPRETATIONS BELOW="
+End
+Lbl L4
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
+Lbl L3
+ClrHome
+⌊PHVAR(3)→⌊PHVAR(4)
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
 
 Lbl SA
 While 0
@@ -443,9 +481,9 @@ While 0
 "=RESTART.MENU="
 "=QUIT.MENU="
 End
-Menu("RESTART PROGRAM?"," YES",ST," NO",QU)
+Menu("RESTART PROGRAM?"," YES",GO," NO",QU)
 Lbl QU
-Menu("ARE YOU SURE?"," NO",ST," YES",YE)
+Menu("ARE YOU SURE?"," NO",GO," YES",YE)
 
 Lbl YE
 While 0
