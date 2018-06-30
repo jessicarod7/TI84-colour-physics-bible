@@ -68,23 +68,23 @@ This is a fully-fledged list of the requirements for each section of the calcula
     - [x] Request variables, and store as ⌊PHVAR(1-3)
     - [x] Run calculation and store value as ⌊PHVAR(4)
     - [x] Display result to user, delay, and return to main program
-- [ ] **Acceleration**
-  - [ ] *Distance* [A,D4]
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Final Velocity* [A,F4]
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Initial Velocity* [A,I4]
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
-  - [ ] *Time* [A,T4]
-    - [ ] Request variables, and store as ⌊PHVAR(1-3)
-    - [ ] Run calculation and store value as ⌊PHVAR(4)
-    - [ ] Display result to user, delay, and return to main program
+- [x] **Acceleration**
+  - [x] *Distance* [A,D4]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [x] *Final Velocity* [A,F4]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [x] *Initial Velocity* [A,I4]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
+  - [x] *Time* [A,T4]
+    - [x] Request variables, and store as ⌊PHVAR(1-3)
+    - [x] Run calculation and store value as ⌊PHVAR(4)
+    - [x] Display result to user, delay, and return to main program
 - [ ] **Time**
   - [ ] *Distance* [T,D5]
     - [ ] Request variables, and store as ⌊PHVAR(1-3)
