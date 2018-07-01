@@ -8,7 +8,7 @@ This is a program designed for the **TI-84 Plus Colour Edition (TI-84+CE)**  and
 - Final velocity (in m/s)
 - Time (in s)
 
-This program is written in TI-BASIC, and will work from RAM or the Archive. Due to the size of the program (12 119 bytes on TI-84+CE, 13 368 bytes on TI-84+C SE) without the automatically generated list ```PHVAR```, it is recommended to store the program in the Archive. Although this program is capable of running on black and white display TI-83/84 graphing calculator, it is *not recommended*, as the text is optimized for the larger colour displays and will wrap on top of itself on black and white screens.
+This program is written in TI-BASIC, and will work from RAM or the Archive. Due to the size of the program (12 119 bytes on TI-84+CE, 13 491 bytes on TI-84+C SE) without the automatically generated list ```PHVAR```, it is recommended to store the program in the Archive. Although this program is capable of running on black and white display TI-83/84 graphing calculator, it is *not recommended*, as the text is optimized for the larger colour displays and will wrap on top of itself on black and white screens.
 
 ## Installing the Physics Bible
 
