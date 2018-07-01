@@ -1,6 +1,6 @@
 # The TI-84 Colour Edition Physics Bible Program
 
-This is a program designed for the **TI-84+CE**  and the **TI-84+C SE**, to help you solve for different key values needed in a variety of physics equations. The equations calculated in the program are derivations of the 5 equations of uniformly accelerated motion in one dimension, which can be viewed [here](https://i.imgur.com/5MSZ8Nv.jpg). This program can solve for any of the following variables if 3 others are known (measurement units in parentheses):
+This is a program designed for the **TI-84 Plus Colour Edition (TI-84+CE)**  and the **TI-84 Plus C Silver Edition (TI-84+C SE)**, to help you solve for different key values needed in a variety of physics equations. The equations calculated in the program are derivations of the 5 equations of uniformly accelerated motion in one dimension, which can be viewed [here](https://i.imgur.com/5MSZ8Nv.jpg). This program can solve for any of the following variables if 3 others are known (measurement units in parentheses):
 
 - Acceleration (in m/s²)
 - Displacement (in m)
@@ -8,7 +8,7 @@ This is a program designed for the **TI-84+CE**  and the **TI-84+C SE**, to help
 - Final velocity (in m/s)
 - Time (in s)
 
-This program is written in TI-BASIC, and will work from RAM or the Archive. Due to the size of the program (over 12 000 bytes on device, without the automatically generated list ```PHVAR```), it is recommended to store the program in the Archive. Although this program is capable of running on black and white display TI-83/84 graphing calculator, it is *not recommended*, as the text is optimized for the larger colour displays and will wrap on top of itself on black and white screens.
+This program is written in TI-BASIC, and will work from RAM or the Archive. Due to the size of the program (12 119 bytes on TI-84+CE, 13 368 bytes on TI-84+C SE) without the automatically generated list ```PHVAR```, it is recommended to store the program in the Archive. Although this program is capable of running on black and white display TI-83/84 graphing calculator, it is *not recommended*, as the text is optimized for the larger colour displays and will wrap on top of itself on black and white screens.
 
 ## Installing the Physics Bible
 
