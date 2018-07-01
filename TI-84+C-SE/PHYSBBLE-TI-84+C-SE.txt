@@ -1,0 +1,838 @@
+ClrHome
+While 0
+"=INTRO AND PREPARE ⌊KEYS="
+"=1-3→VARS, 4→ANS, 5→VAR STORAGE="
+
+"=NOTE: NEGATIVE SIGNS ARE INVISIBLE IN VS CODE="
+"=THIS WILL BE INDICATED="
+End
+Output(3,8,"THE PHYSICS")
+Output(4,12,"BIBLE")
+Output(7,4,"BY CAMERON RODRIGUEZ")
+Output(9,5,"ROD.CAM2014+DEV AT")
+Output(10,10,"GMAIL.COM")
+Wait 2
+SetUpEditor PHVAR,L₁,L₂,L₃,L₄,L₅,L₆
+5→dim(⌊PHVAR)
+
+Lbl GO
+While 0
+"=MAIN PGRM START="
+End
+0→⌊PHVAR(5)
+ClrHome
+Output(2,5,"ON THE NEXT SCREEN")
+Output(3,2,"SELECT THE VARIABLE YOU")
+Output(4,8,"DON'T HAVE.")
+Output(5,4,"(NOT WHAT YOU WANT)")
+Output(7,2,"ALL ANSWERS WILL DISPLAY")
+Output(8,3,"6 DIGITS AFTER DECIMAL")
+Output(10,1,"VARIABLE (U) WILL BE USED")
+Wait 3
+ClrHome
+While 0
+"=MAIN.MENU="
+End
+Menu("MISSING?"," DISTANCE",D," FINAL VELOCITY",F," INITIAL VELOCITY",I," ACCELERATION",A," TIME",T," QUIT",QU)
+
+Lbl D
+While 0
+"=DIST SUB.MENU="
+End
+Menu("SOLVE FOR?"," FINAL VELOCITY",F1," INITIAL VELOCITY",I1," ACCELERATION",A1," TIME",T1," RETURN TO MAIN MENU",GO)
+
+Lbl F1
+Disp "FIND FINAL V., NO DIST."
+Disp " "
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+round(((⌊PHVAR(2)*⌊PHVAR(3))+⌊PHVAR(1)),6)→⌊PHVAR(4)
+Output(8,1,"FINAL V. =")
+Output(8,12,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"FINAL V. =")
+Output(1,12,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+
+Lbl I1
+Disp "FIND INITIAL V., NO DIST."
+Disp " "
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+While 0
+"=NEGATIVE BELOW="
+End
+round((­(⌊PHVAR(2)*⌊PHVAR(3))+⌊PHVAR(1)),6)→⌊PHVAR(4)
+Output(8,1,"INITIAL V. =")
+Output(8,14,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"INITIAL V. =")
+Output(1,14,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+
+Lbl A1
+Disp "FIND ACCEL., NO DIST."
+Disp " "
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,6,"TIME CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+ClrHome
+Goto A1
+End
+round(((⌊PHVAR(1)-⌊PHVAR(2))/⌊PHVAR(3)),6)→⌊PHVAR(4)
+Output(8,1,"ACCEL. =")
+Output(8,10,⌊PHVAR(4))
+Output(9,22,"m/s²")
+Wait 2
+ClrHome
+Output(1,1,"ACCEL. =")
+Output(1,10,⌊PHVAR(4))
+Output(2,22,"m/s²")
+Goto SA
+
+Lbl T1
+Disp "FIND TIME, NO DIST."
+Disp " "
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF ACCEL.=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,5,"ACCEL. CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+ClrHome
+Goto T1
+End
+round(((⌊PHVAR(1)-⌊PHVAR(2))/⌊PHVAR(3)),6)→⌊PHVAR(4)
+Output(8,1,"TIME =")
+Output(8,8,⌊PHVAR(4))
+Output(9,25,"s")
+Wait 2
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
+
+Lbl F
+While 0
+"=FINAL V. SUB.MENU="
+End
+Menu("SOLVE FOR?"," DISTANCE",D2," INITIAL VELOCITY",I2," ACCELERATION",A2," TIME",T2," RETURN TO MAIN MENU",GO)
+
+Lbl D2
+Disp "FIND DIST., NO FINAL V."
+Disp " "
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+round(((⌊PHVAR(1)*⌊PHVAR(3))+(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²))),6)→⌊PHVAR(4)
+Output(8,1,"DIST. =")
+Output(8,9,⌊PHVAR(4))
+Output(9,25,"m")
+Wait 2
+ClrHome
+Output(1,1,"DIST. =")
+Output(1,9,⌊PHVAR(4))
+Output(2,25,"m")
+Goto SA
+
+Lbl I2
+Disp "FIND INIT. V., NO FINAL V."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,6,"TIME CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+ClrHome
+Goto I2
+End
+round(((⌊PHVAR(1)-(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²)))/⌊PHVAR(3)),6)→⌊PHVAR(4)
+Output(8,1,"INITIAL V. =")
+Output(8,14,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"INITIAL V. =")
+Output(1,14,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+
+Lbl A2
+Disp "FIND ACCEL., NO FINAL V."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,6,"TIME CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+ClrHome
+Goto A2
+End
+round(((2*(⌊PHVAR(1)-(⌊PHVAR(2)*⌊PHVAR(3))))/((⌊PHVAR(3))²)),6)→⌊PHVAR(4)
+Output(8,1,"ACCEL. =")
+Output(8,10,⌊PHVAR(4))
+Output(9,22,"m/s²")
+Wait 2
+ClrHome
+Output(1,1,"ACCEL. =")
+Output(1,10,⌊PHVAR(4))
+Output(2,22,"m/s²")
+Goto SA
+
+Lbl T2
+Disp "FIND TIME, NO FINAL V."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF ACCEL.=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+round(((⌊PHVAR(1))/(⌊PHVAR(2))),6)→⌊PHVAR(4)
+Output(8,1,"TIME =")
+Output(8,8,⌊PHVAR(4))
+Output(9,25,"s")
+Wait 2
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
+End
+(0.5*⌊PHVAR(3))→⌊PHVAR(3)
+While 0
+"=NEGATIVE BELOW="
+End
+(­(⌊PHVAR(2)))→⌊PHVAR(2)
+While 0
+"=NEGATIVE BELOW="
+End
+(­(⌊PHVAR(1)))→⌊PHVAR(1)
+While 0
+"=CHECKS DISCRIMINANT="
+End
+If (((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))<0
+Then
+Output(8,7,"INVALID INPUT")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+ClrHome
+Goto T2
+End
+While 0
+"=THIS EQUATION USES THE="
+"=QUADRATIC FORMULA="
+End
+round(((⌊PHVAR(2)+(√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))))/(2*⌊PHVAR(3))),6)→⌊PHVAR(4)
+round(((⌊PHVAR(2)-(√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))))/(2*⌊PHVAR(3))),6)→⌊PHVAR(3)
+Output(7,1,"TIME =")
+Output(7,8,⌊PHVAR(4))
+Output(8,3,"OR")
+Output(8,8,⌊PHVAR(3))
+Output(9,25,"s")
+Wait 2
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,3,"OR")
+Output(2,8,⌊PHVAR(3))
+Output(3,25,"s")
+Goto ST
+
+Lbl I
+While 0
+"=INITIAL V. SUB.MENU="
+End
+Menu("SOLVE FOR?"," DISTANCE",D3," FINAL VELOCITY",F3," ACCELERATION",A3," TIME",T3," RETURN TO MAIN MENU",GO)
+
+Lbl D3
+Disp "FIND DIST., NO INITIAL V."
+Disp " "
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+round(((⌊PHVAR(1)*⌊PHVAR(3))-(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²))),6)→⌊PHVAR(4)
+Output(8,1,"DIST. =")
+Output(8,9,⌊PHVAR(4))
+Output(9,25,"m")
+Wait 2
+ClrHome
+Output(1,1,"DIST. =")
+Output(1,9,⌊PHVAR(4))
+Output(2,25,"m")
+Goto SA
+
+Lbl F3
+Disp "FIND FINAL V., NO INIT. V."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,6,"TIME CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto F3
+End
+round(((⌊PHVAR(1)+(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²)))/⌊PHVAR(3)),6)→⌊PHVAR(4)
+Output(8,1,"FINAL V. =")
+Output(8,12,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"FINAL V. =")
+Output(1,12,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+
+Lbl A3
+Disp "FIND ACCEL., NO INIT. V."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,6,"TIME CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto A3
+End
+While 0
+"=NEGATIVE BELOW="
+End
+round((­((2*(⌊PHVAR(1)-(⌊PHVAR(2)*⌊PHVAR(3))))/((⌊PHVAR(3))²))),6)→⌊PHVAR(4)
+Output(8,1,"ACCEL. =")
+Output(8,10,⌊PHVAR(4))
+Output(9,22,"m/s²")
+Wait 2
+ClrHome
+Output(1,1,"ACCEL. =")
+Output(1,10,⌊PHVAR(4))
+Output(2,22,"m/s²")
+Goto SA
+
+Lbl T3
+Disp "FIND TIME, NO FINAL V."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF ACCEL.=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+round(((⌊PHVAR(1))/(⌊PHVAR(2))),6)→⌊PHVAR(4)
+Output(8,1,"TIME =")
+Output(8,8,⌊PHVAR(4))
+Output(9,25,"s")
+Wait 2
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
+End
+While 0
+"=NEGATIVE BELOW="
+End
+(­(0.5*⌊PHVAR(3)))→⌊PHVAR(3)
+While 0
+"=NEGATIVE BELOW="
+End
+(­(⌊PHVAR(2)))→⌊PHVAR(2)
+While 0
+"=NEGATIVE BELOW="
+End
+(­(⌊PHVAR(1)))→⌊PHVAR(1)
+While 0
+"=CHECKS DISCRIMINANT="
+End
+If (((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))<0
+Then
+Output(8,7,"INVALID INPUT")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto T3
+End
+While 0
+"=THIS EQUATION USES THE="
+"=QUADRATIC FORMULA="
+End
+round(((⌊PHVAR(2)-(√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))))/(2*⌊PHVAR(3))),6)→⌊PHVAR(4)
+round(((⌊PHVAR(2)+(√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))))/(2*⌊PHVAR(3))),6)→⌊PHVAR(4)
+Output(7,1,"TIME =")
+Output(7,8,⌊PHVAR(4))
+Output(8,3,"OR")
+Output(8,8,⌊PHVAR(3))
+Output(9,25,"s")
+Wait 2
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,3,"OR")
+Output(2,8,⌊PHVAR(3))
+Output(3,25,"s")
+Goto ST
+
+Lbl A
+While 0
+"=ACCEL. SUB.MENU="
+End
+Menu("SOLVE FOR?"," DISTANCE",D4," FINAL VELOCITY",F4," INITIAL VELOCITY",I4," TIME",T4," RETURN TO MAIN MENU",GO)
+
+Lbl D4
+Disp "FIND DIST., NO ACCEL."
+Disp " "
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+round((((⌊PHVAR(3))*(⌊PHVAR(1)+⌊PHVAR(2)))/2),6)→⌊PHVAR(4)
+Output(8,1,"DIST. =")
+Output(8,9,⌊PHVAR(4))
+Output(9,25,"m")
+Wait 2
+ClrHome
+Output(1,1,"DIST. =")
+Output(1,9,⌊PHVAR(4))
+Output(2,25,"m")
+Goto SA
+
+Lbl F4
+Disp "FIND FINAL V., NO ACCEL."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+While 0
+"= EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+⌊PHVAR(2)→⌊PHVAR(4)
+Output(8,1,"FINAL V. =")
+Output(8,12,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"FINAL V. =")
+Output(1,12,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+End
+round((((2*⌊PHVAR(1))/(⌊PHVAR(3)))-⌊PHVAR(2)),6)→⌊PHVAR(4)
+Output(8,1,"FINAL V. =")
+Output(8,12,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"FINAL V. =")
+Output(1,12,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+
+Lbl I4
+Disp "FIND INITIAL V., NO ACCEL."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "TIME? (s) ",U
+U→⌊PHVAR(3)
+While 0
+"= EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+⌊PHVAR(2)→⌊PHVAR(4)
+Output(8,1,"FINAL V. =")
+Output(8,12,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"FINAL V. =")
+Output(1,12,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+End
+round(((2*(⌊PHVAR(1))/(⌊PHVAR(3)))-(⌊PHVAR(2))),6)→⌊PHVAR(4)
+Output(8,1,"INITIAL V. =")
+Output(8,14,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"INITIAL V. =")
+Output(1,14,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+
+Lbl T4
+Disp "FIND TIME., NO ACCEL."
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF NET VELOCITY=0 ="
+End
+If ((⌊PHVAR(2))+(⌊PHVAR(3)))=0
+Then
+If ⌊PHVAR(1)=0
+Then
+0→⌊PHVAR(4)
+Output(8,1,"TIME =")
+Output(8,8,⌊PHVAR(4))
+Output(9,25,"s")
+Wait 2
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
+Else
+Output(8,7,"INVALID INPUT")
+Output(9,5,"CHECK YOUR NUMBERS!)
+Wait 2
+Goto T4
+End
+End
+round(((2*(⌊PHVAR(1)))/((⌊PHVAR(2))+(⌊PHVAR(3)))),6)→⌊PHVAR(4)
+Output(8,1,"TIME =")
+Output(8,8,⌊PHVAR(4))
+Output(9,25,"s")
+Wait 2
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
+
+Lbl T
+While 0
+"=TIME SUB.MENU="
+End
+Menu("SOLVE FOR?"," DISTANCE",D5," FINAL VELOCITY",F5," INITIAL VELOCITY",I5," ACCELERATION",A5," RETURN TO MAIN MENU",GO)
+
+Lbl D5
+Disp "FIND DIST., NO TIME"
+Disp " "
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF ACCEL.=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,5,"ACCEL. CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto D5
+End
+round(((((⌊PHVAR(1))²)-((⌊PHVAR(2))²))/(2*(⌊PHVAR(3)))),6)→⌊PHVAR(4)
+Output(8,1,"DIST. =")
+Output(8,9,⌊PHVAR(4))
+Output(9,25,"m")
+Wait 2
+ClrHome
+Output(1,1,"DIST. =")
+Output(1,9,⌊PHVAR(4))
+Output(2,25,"m")
+Goto SA
+
+Lbl F5
+Disp "FIND FINAL V., NO TIME"
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "INITIAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(3)
+While 0
+"=CHECKS VALIDITY="
+End
+If (((⌊PHVAR(2))²)+(2*(⌊PHVAR(3))*(⌊PHVAR(1))))<0
+Then
+Output(8,7,"INVALID INPUT")
+Output(9,5,"CHECK YOUR NUMBERS!)
+Wait 2
+Goto F5
+End
+round((√(((⌊PHVAR(2))²)+(2*(⌊PHVAR(3))*(⌊PHVAR(1))))),6)→⌊PHVAR(4)
+Output(8,1,"FINAL V. =")
+Output(8,12,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"FINAL V. =")
+Output(1,12,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+
+Lbl I5
+Disp "FIND INITIAL V., NO TIME"
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "ACCEL.? (m/s²) ",U
+U→⌊PHVAR(3)
+While 0
+"=CHECKS VALIDITY="
+End
+If (((⌊PHVAR(2))²)-(2*(⌊PHVAR(3))*(⌊PHVAR(1))))<0
+Then
+Output(8,7,"INVALID INPUT")
+Output(9,5,"CHECK YOUR NUMBERS!)
+Wait 2
+Goto I5
+End
+round((√(((⌊PHVAR(2))²)-(2*(⌊PHVAR(3))*(⌊PHVAR(1))))),6)→⌊PHVAR(4)
+Output(8,1,"INITIAL V. =")
+Output(8,14,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"INITIAL V. =")
+Output(1,14,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+
+Lbl A5
+Disp "FIND ACCEL., NO TIME"
+Disp " "
+Input "DIST.? (m) ",U
+U→⌊PHVAR(1)
+Input "FINAL V.? (m/s) ",U
+U→⌊PHVAR(2)
+Input "INITIAL V.? (m/s²) ",U
+U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF DIST.=0 ="
+End
+If ⌊PHVAR(1)=0
+Then
+Output(8,5,"DIST. CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto T1
+End
+round(((((⌊PHVAR(2))²)-((⌊PHVAR(3))²))/(2*(⌊PHVAR(1)))),6)→⌊PHVAR(4)
+Output(8,1,"ACCEL. =")
+Output(8,10,⌊PHVAR(4))
+Output(9,22,"m/s²")
+Wait 2
+ClrHome
+Output(1,1,"ACCEL. =")
+Output(1,10,⌊PHVAR(4))
+Output(2,22,"m/s²")
+Goto SA
+
+Lbl ST
+While 0
+"=USED FOR [F,T2] AND [I,T3]"="
+End
+Output(5,1,"USE COMMON SENSE WHEN")
+Output(6,1,"SELECTING YOUR ANSWER")
+Output(7,1,"AND REMEMBER THE ORDER")
+Output(9,1,"(GENERALLY THE NEGATIVE")
+Output(10,1,"ANSWER IS WRONG)")
+Wait 5
+ClrHome
+Menu("WHICH ANSWER DO YOU WANT?","THE FIRST ONE",L4,"THE SECOND ONE",L3)
+While 0
+"=INTERPRETATIONS BELOW="
+End
+Lbl L4
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
+Lbl L3
+ClrHome
+⌊PHVAR(3)→⌊PHVAR(4)
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
+
+Lbl SA
+While 0
+"=SAVE.MENU="
+End
+Output(4,4,"TO SAVE YOUR ANSWER,")
+Output(5,3,"TAP A VARIABLE WITHOUT")
+Output(6,11,"ALPHA")
+Output(8,8,"TO NOT SAVE,")
+Output(9,9,"PRESS CLEAR")
+Repeat ⌊PHVAR(5)
+getKey→⌊PHVAR(5)
+End
+If ⌊PHVAR(5)=41
+⌊PHVAR(4)→A
+If ⌊PHVAR(5)=42
+⌊PHVAR(4)→B
+If ⌊PHVAR(5)=43
+⌊PHVAR(4)→C
+If ⌊PHVAR(5)=51
+⌊PHVAR(4)→D
+If ⌊PHVAR(5)=52
+⌊PHVAR(4)→E
+If ⌊PHVAR(5)=53
+⌊PHVAR(4)→F
+If ⌊PHVAR(5)=54
+⌊PHVAR(4)→G
+If ⌊PHVAR(5)=55
+⌊PHVAR(4)→H
+If ⌊PHVAR(5)=61
+⌊PHVAR(4)→I
+If ⌊PHVAR(5)=62
+⌊PHVAR(4)→J
+If ⌊PHVAR(5)=63
+⌊PHVAR(4)→K
+If ⌊PHVAR(5)=64
+⌊PHVAR(4)→L
+If ⌊PHVAR(5)=65
+⌊PHVAR(4)→M
+If ⌊PHVAR(5)=71
+⌊PHVAR(4)→N
+If ⌊PHVAR(5)=72
+⌊PHVAR(4)→O
+If ⌊PHVAR(5)=73
+⌊PHVAR(4)→P
+If ⌊PHVAR(5)=74
+⌊PHVAR(4)→Q
+If ⌊PHVAR(5)=75
+⌊PHVAR(4)→R
+If ⌊PHVAR(5)=81
+⌊PHVAR(4)→S
+If ⌊PHVAR(5)=82
+⌊PHVAR(4)→T
+If ⌊PHVAR(5)=83
+⌊PHVAR(4)→U
+If ⌊PHVAR(5)=84
+⌊PHVAR(4)→V
+If ⌊PHVAR(5)=85
+⌊PHVAR(4)→W
+If ⌊PHVAR(5)=91
+⌊PHVAR(4)→X
+If ⌊PHVAR(5)=92
+⌊PHVAR(4)→Y
+If ⌊PHVAR(5)=93
+⌊PHVAR(4)→Z
+If ⌊PHVAR(5)=94
+⌊PHVAR(4)→θ
+ClrHome
+
+While 0
+"=RESTART.MENU="
+"=QUIT.MENU="
+End
+Menu("RESTART PROGRAM?"," YES",GO," NO",QU)
+Lbl QU
+Menu("ARE YOU SURE?"," NO",GO," YES",YE)
+
+Lbl YE
+While 0
+"=PGRM SHUTDOWN="
+End
+0→dim(⌊PHVAR)
+SetUpEditor 
+Archive ⌊PHVAR
+ClrHome
