@@ -93,6 +93,16 @@ Input "INITIAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "TIME? (s) ",U
 U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,6,"TIME CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto A1
+End
 round(((⌊PHVAR(1)-⌊PHVAR(2))/⌊PHVAR(3)),6)→⌊PHVAR(4)
 Output(8,1,"ACCEL. =")
 Output(8,10,⌊PHVAR(4))
@@ -113,6 +123,16 @@ Input "INITIAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "ACCEL.? (m/s²) ",U
 U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF ACCEL.=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,5,"ACCEL. CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto T1
+End
 round(((⌊PHVAR(1)-⌊PHVAR(2))/⌊PHVAR(3)),6)→⌊PHVAR(4)
 Output(8,1,"TIME =")
 Output(8,8,⌊PHVAR(4))
@@ -159,6 +179,16 @@ Input "ACCEL.? (m/s²) ",U
 U→⌊PHVAR(2)
 Input "TIME? (s) ",U
 U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,6,"TIME CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto I2
+End
 round(((⌊PHVAR(1)-(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²)))/⌊PHVAR(3)),6)→⌊PHVAR(4)
 Output(8,1,"INITIAL V. =")
 Output(8,14,⌊PHVAR(4))
@@ -179,6 +209,16 @@ Input "INITIAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "TIME? (s) ",U
 U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,6,"TIME CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto A2
+End
 round(((2*(⌊PHVAR(1)-(⌊PHVAR(2)*⌊PHVAR(3))))/((⌊PHVAR(3))²)),6)→⌊PHVAR(4)
 Output(8,1,"ACCEL. =")
 Output(8,10,⌊PHVAR(4))
@@ -199,6 +239,22 @@ Input "INITIAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "ACCEL.? (m/s²) ",U
 U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF ACCEL.=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+round(((⌊PHVAR(1))/(⌊PHVAR(2))),6)→⌊PHVAR(4)
+Output(8,1,"TIME =")
+Output(8,8,⌊PHVAR(4))
+Output(9,25,"s")
+Wait 2
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
+End
 (0.5*⌊PHVAR(3))→⌊PHVAR(3)
 While 0
 "=NEGATIVE BELOW="
@@ -208,6 +264,16 @@ While 0
 "=NEGATIVE BELOW="
 End
 (­(⌊PHVAR(1)))→⌊PHVAR(1)
+While 0
+"=CHECKS DISCRIMINANT="
+End
+If (√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3))))<0
+Then
+Output(8,7,"INVALID INPUT")
+Output(9,5,"CHECK YOUR NUMBERS!)
+Wait 2
+Goto T2
+End
 While 0
 "=THIS EQUATION USES THE="
 "=QUADRATIC FORMULA="
@@ -263,6 +329,16 @@ Input "ACCEL.? (m/s²) ",U
 U→⌊PHVAR(2)
 Input "TIME? (s) ",U
 U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,6,"TIME CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto F3
+End
 round(((⌊PHVAR(1)+(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²)))/⌊PHVAR(3)),6)→⌊PHVAR(4)
 Output(8,1,"FINAL V. =")
 Output(8,12,⌊PHVAR(4))
@@ -283,6 +359,16 @@ Input "INITIAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "TIME? (s) ",U
 U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,6,"TIME CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto A3
+End
 While 0
 "=NEGATIVE BELOW="
 End
@@ -307,6 +393,22 @@ U→⌊PHVAR(2)
 Input "ACCEL.? (m/s²) ",U
 U→⌊PHVAR(3)
 While 0
+"=EXCEPTION IF ACCEL.=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+round(((⌊PHVAR(1))/(⌊PHVAR(2))),6)→⌊PHVAR(4)
+Output(8,1,"TIME =")
+Output(8,8,⌊PHVAR(4))
+Output(9,25,"s")
+Wait 2
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
+End
+While 0
 "=NEGATIVE BELOW="
 End
 (­(0.5*⌊PHVAR(3)))→⌊PHVAR(3)
@@ -318,6 +420,16 @@ While 0
 "=NEGATIVE BELOW="
 End
 (­(⌊PHVAR(1)))→⌊PHVAR(1)
+While 0
+"=CHECKS DISCRIMINANT="
+End
+If (√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3))))<0
+Then
+Output(8,7,"INVALID INPUT")
+Output(9,5,"CHECK YOUR NUMBERS!)
+Wait 2
+Goto T3
+End
 While 0
 "=THIS EQUATION USES THE="
 "=QUADRATIC FORMULA="
@@ -373,6 +485,21 @@ Input "INITIAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "TIME? (s) ",U
 U→⌊PHVAR(3)
+While 0
+"= EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+⌊PHVAR(2)→⌊PHVAR(4)
+Output(8,1,"FINAL V. =")
+Output(8,12,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"FINAL V. =")
+Output(1,12,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+End
 round((((2*(⌊PHVAR(1))/(⌊PHVAR(3)))-(⌊PHVAR(2))),6)→⌊PHVAR(4)
 Output(8,1,"FINAL V. =")
 Output(8,12,⌊PHVAR(4))
@@ -393,6 +520,21 @@ Input "FINAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "TIME? (s) ",U
 U→⌊PHVAR(3)
+While 0
+"= EXCEPTION IF TIME=0 ="
+End
+If ⌊PHVAR(3)=0
+⌊PHVAR(2)→⌊PHVAR(4)
+Output(8,1,"FINAL V. =")
+Output(8,12,⌊PHVAR(4))
+Output(9,23,"m/s")
+Wait 2
+ClrHome
+Output(1,1,"FINAL V. =")
+Output(1,12,⌊PHVAR(4))
+Output(2,23,"m/s")
+Goto SA
+End
 round((((2*(⌊PHVAR(1))/(⌊PHVAR(3)))-(⌊PHVAR(2))),6)→⌊PHVAR(4)
 Output(8,1,"INITIAL V. =")
 Output(8,14,⌊PHVAR(4))
@@ -413,6 +555,30 @@ Input "FINAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "INITIAL V.? (m/s) ",U
 U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF NET VELOCITY=0 ="
+End
+If ((⌊PHVAR(2))+(⌊PHVAR(3)))=0
+Then
+If ⌊PHVAR(1)=0
+Then
+0→⌊PHVAR(4)
+Output(8,1,"TIME =")
+Output(8,8,⌊PHVAR(4))
+Output(9,25,"s")
+Wait 2
+ClrHome
+Output(1,1,"TIME =")
+Output(1,8,⌊PHVAR(4))
+Output(2,25,"s")
+Goto SA
+Else
+Output(8,7,"INVALID INPUT")
+Output(9,5,"CHECK YOUR NUMBERS!)
+Wait 2
+Goto T4
+End
+End
 round(((2*(⌊PHVAR(1)))/((⌊PHVAR(2))+(⌊PHVAR(3)))),6)→⌊PHVAR(4)
 Output(8,1,"TIME =")
 Output(8,8,⌊PHVAR(4))
@@ -439,6 +605,16 @@ Input "INITIAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "ACCEL.? (m/s²) ",U
 U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF ACCEL.=0 ="
+End
+If ⌊PHVAR(3)=0
+Then
+Output(8,5,"ACCEL. CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto D5
+End
 round(((((⌊PHVAR(1))²)-((⌊PHVAR(2))²))/(2*(⌊PHVAR(3)))),6)→⌊PHVAR(4)
 Output(8,1,"DIST. =")
 Output(8,9,⌊PHVAR(4))
@@ -459,6 +635,16 @@ Input "INITIAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "ACCEL.? (m/s²) ",U
 U→⌊PHVAR(3)
+While 0
+"=CHECKS VALIDITY="
+End
+If (((⌊PHVAR(2))²)+(2*(⌊PHVAR(3))*(⌊PHVAR(1))))<0
+Then
+Output(8,7,"INVALID INPUT")
+Output(9,5,"CHECK YOUR NUMBERS!)
+Wait 2
+Goto F5
+End
 round((√(((⌊PHVAR(2))²)+(2*(⌊PHVAR(3))*(⌊PHVAR(1))))),6)→⌊PHVAR(4)
 Output(8,1,"FINAL V. =")
 Output(8,12,⌊PHVAR(4))
@@ -479,6 +665,16 @@ Input "FINAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "TIME? (m/s²) ",U
 U→⌊PHVAR(3)
+While 0
+"=CHECKS VALIDITY="
+End
+If (((⌊PHVAR(2))²)-(2*(⌊PHVAR(3))*(⌊PHVAR(1))))<0
+Then
+Output(8,7,"INVALID INPUT")
+Output(9,5,"CHECK YOUR NUMBERS!)
+Wait 2
+Goto I5
+End
 round((√(((⌊PHVAR(2))²)-(2*(⌊PHVAR(3))*(⌊PHVAR(1))))),6)→⌊PHVAR(4)
 Output(8,1,"INITIAL V. =")
 Output(8,14,⌊PHVAR(4))
@@ -499,6 +695,16 @@ Input "FINAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "INITIAL V.? (m/s²) ",U
 U→⌊PHVAR(3)
+While 0
+"=EXCEPTION IF DIST.=0 ="
+End
+If ⌊PHVAR(1)=0
+Then
+Output(8,5,"DIST. CANNOT BE 0")
+Output(9,5,"CHECK YOUR NUMBERS!")
+Wait 2
+Goto T1
+End
 round(((((⌊PHVAR(2))²)-((⌊PHVAR(3))²))/(2*(⌊PHVAR(1)))),6)→⌊PHVAR(4)
 Output(8,1,"ACCEL. =")
 Output(8,10,⌊PHVAR(4))
