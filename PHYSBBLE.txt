@@ -12,7 +12,7 @@ Output(7,4,"BY CAMERON RODRIGUEZ")
 Output(9,5,"ROD.CAM2014+DEV AT")
 Output(10,10,"GMAIL.COM")
 Wait 2
-SetUpEditor PHVAR,⌊1,⌊2,⌊3,⌊4,⌊5,⌊6
+SetUpEditor PHVAR,L1,L2,L3,L4,L5,L6
 5→dim(⌊PHVAR)
 
 Lbl GO
@@ -274,7 +274,7 @@ End
 If (((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))<0
 Then
 Output(8,7,"INVALID INPUT")
-Output(9,5,"CHECK YOUR NUMBERS!)
+Output(9,5,"CHECK YOUR NUMBERS!")
 Wait 2
 ClrHome
 Goto T2
@@ -431,7 +431,7 @@ End
 If (((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))<0
 Then
 Output(8,7,"INVALID INPUT")
-Output(9,5,"CHECK YOUR NUMBERS!)
+Output(9,5,"CHECK YOUR NUMBERS!")
 Wait 2
 Goto T3
 End
@@ -505,7 +505,7 @@ Output(1,12,⌊PHVAR(4))
 Output(2,23,"m/s")
 Goto SA
 End
-round((((2*(⌊PHVAR(1)))/(⌊PHVAR(3)))-(⌊PHVAR(2))),6)→⌊PHVAR(4)
+round((((2*⌊PHVAR(1))/(⌊PHVAR(3)))-⌊PHVAR(2)),6)→⌊PHVAR(4)
 Output(8,1,"FINAL V. =")
 Output(8,12,⌊PHVAR(4))
 Output(9,23,"m/s")
