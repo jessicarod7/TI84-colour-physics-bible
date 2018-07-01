@@ -16,7 +16,7 @@ This program is written in TI-BASIC, and will work from RAM or the Archive. Due 
 
 ## Installing the Physics Bible
 
-To download the program, follow [this link](https://github.com/cam-rod/TI84-colour-physics-bible/releases) and select the version for your calculator Then, head over to the download site for the [TI Connect CE software](https://education.ti.com/en/products/computer-software/ti-connect-ce-sw) and follow the instructions in the guidebook to send the program to your TI-84+CE. Finally, to run the program, press the ```pgrm``` button, and then select the program called ```PHYSBBLE```.
+To download the program, follow [this link](https://github.com/cam-rod/TI84-colour-physics-bible/releases) and select the version for your calculator. Then, head over to the download site for the [TI Connect CE software](https://education.ti.com/en/products/computer-software/ti-connect-ce-sw) and follow the instructions in the guidebook to send the program to your TI-84+CE. Finally, to run the program, press the ```pgrm``` button, and then select the program called ```PHYSBBLE```.
 
 ## Building the Physics Bible
 
