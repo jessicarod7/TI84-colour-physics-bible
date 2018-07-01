@@ -494,6 +494,7 @@ While 0
 "= EXCEPTION IF TIME=0 ="
 End
 If ⌊PHVAR(3)=0
+Then
 ⌊PHVAR(2)→⌊PHVAR(4)
 Output(8,1,"FINAL V. =")
 Output(8,12,⌊PHVAR(4))
