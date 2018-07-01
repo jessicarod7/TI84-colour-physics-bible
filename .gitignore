@@ -5,4 +5,3 @@
 # Don't track local files used for dev work
 *.jpg
 *.vscode
-temp.txt
