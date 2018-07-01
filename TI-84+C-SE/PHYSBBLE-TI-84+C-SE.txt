@@ -57,7 +57,7 @@ Output(7,1,"FINAL V. =")
 Output(7,12,⌊PHVAR(4))
 Output(8,23,"m/s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"FINAL V. =")
 Output(1,12,⌊PHVAR(4))
@@ -81,7 +81,7 @@ Output(7,1,"INITIAL V. =")
 Output(7,14,⌊PHVAR(4))
 Output(8,23,"m/s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"INITIAL V. =")
 Output(1,14,⌊PHVAR(4))
@@ -105,7 +105,7 @@ Then
 Output(7,6,"TIME CANNOT BE 0")
 Output(8,5,"CHECK YOUR NUMBERS!")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Goto A1
 End
@@ -114,7 +114,7 @@ Output(7,1,"ACCEL. =")
 Output(7,10,⌊PHVAR(4))
 Output(8,22,"m/s²")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"ACCEL. =")
 Output(1,10,⌊PHVAR(4))
@@ -138,7 +138,7 @@ Then
 Output(7,5,"ACCEL. CANNOT BE 0")
 Output(8,5,"CHECK YOUR NUMBERS!")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Goto T1
 End
@@ -147,7 +147,7 @@ Output(7,1,"TIME =")
 Output(7,8,⌊PHVAR(4))
 Output(8,25,"s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"TIME =")
 Output(1,8,⌊PHVAR(4))
@@ -174,7 +174,7 @@ Output(7,1,"DIST. =")
 Output(7,9,⌊PHVAR(4))
 Output(8,25,"m")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"DIST. =")
 Output(1,9,⌊PHVAR(4))
@@ -198,7 +198,7 @@ Then
 Output(7,6,"TIME CANNOT BE 0")
 Output(8,5,"CHECK YOUR NUMBERS!")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Goto I2
 End
@@ -207,7 +207,7 @@ Output(7,1,"INITIAL V. =")
 Output(7,14,⌊PHVAR(4))
 Output(8,23,"m/s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"INITIAL V. =")
 Output(1,14,⌊PHVAR(4))
@@ -231,7 +231,7 @@ Then
 Output(7,6,"TIME CANNOT BE 0")
 Output(8,5,"CHECK YOUR NUMBERS!")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Goto A2
 End
@@ -240,7 +240,7 @@ Output(7,1,"ACCEL. =")
 Output(7,10,⌊PHVAR(4))
 Output(8,22,"m/s²")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"ACCEL. =")
 Output(1,10,⌊PHVAR(4))
@@ -266,7 +266,7 @@ Output(7,1,"TIME =")
 Output(7,8,⌊PHVAR(4))
 Output(8,25,"s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"TIME =")
 Output(1,8,⌊PHVAR(4))
@@ -290,7 +290,7 @@ Then
 Output(7,7,"INVALID INPUT")
 Output(8,5,"CHECK YOUR NUMBERS!")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Goto T2
 End
@@ -306,7 +306,7 @@ Output(8,3,"OR")
 Output(8,8,⌊PHVAR(3))
 Output(9,25,"s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"TIME =")
 Output(1,8,⌊PHVAR(4))
@@ -335,7 +335,7 @@ Output(7,1,"DIST. =")
 Output(7,9,⌊PHVAR(4))
 Output(8,25,"m")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"DIST. =")
 Output(1,9,⌊PHVAR(4))
@@ -359,7 +359,7 @@ Then
 Output(7,6,"TIME CANNOT BE 0")
 Output(8,5,"CHECK YOUR NUMBERS!")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 Goto F3
 End
 round(((⌊PHVAR(1)+(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²)))/⌊PHVAR(3)),6)→⌊PHVAR(4)
@@ -367,7 +367,7 @@ Output(7,1,"FINAL V. =")
 Output(7,12,⌊PHVAR(4))
 Output(8,23,"m/s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"FINAL V. =")
 Output(1,12,⌊PHVAR(4))
@@ -391,7 +391,7 @@ Then
 Output(7,6,"TIME CANNOT BE 0")
 Output(8,5,"CHECK YOUR NUMBERS!")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 Goto A3
 End
 While 0
@@ -402,7 +402,7 @@ Output(7,1,"ACCEL. =")
 Output(7,10,⌊PHVAR(4))
 Output(8,22,"m/s²")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"ACCEL. =")
 Output(1,10,⌊PHVAR(4))
@@ -428,7 +428,7 @@ Output(7,1,"TIME =")
 Output(7,8,⌊PHVAR(4))
 Output(8,25,"s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"TIME =")
 Output(1,8,⌊PHVAR(4))
@@ -455,7 +455,7 @@ Then
 Output(7,7,"INVALID INPUT")
 Output(8,5,"CHECK YOUR NUMBERS!")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 Goto T3
 End
 While 0
@@ -470,7 +470,7 @@ Output(8,3,"OR")
 Output(8,8,⌊PHVAR(3))
 Output(9,25,"s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"TIME =")
 Output(1,8,⌊PHVAR(4))
@@ -499,7 +499,7 @@ Output(7,1,"DIST. =")
 Output(7,9,⌊PHVAR(4))
 Output(8,25,"m")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"DIST. =")
 Output(1,9,⌊PHVAR(4))
@@ -525,7 +525,7 @@ Output(7,1,"FINAL V. =")
 Output(7,12,⌊PHVAR(4))
 Output(8,23,"m/s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"FINAL V. =")
 Output(1,12,⌊PHVAR(4))
@@ -537,7 +537,7 @@ Output(7,1,"FINAL V. =")
 Output(7,12,⌊PHVAR(4))
 Output(8,23,"m/s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"FINAL V. =")
 Output(1,12,⌊PHVAR(4))
@@ -563,7 +563,7 @@ Output(7,1,"FINAL V. =")
 Output(7,12,⌊PHVAR(4))
 Output(8,23,"m/s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"FINAL V. =")
 Output(1,12,⌊PHVAR(4))
@@ -575,7 +575,7 @@ Output(7,1,"INITIAL V. =")
 Output(7,14,⌊PHVAR(4))
 Output(8,23,"m/s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"INITIAL V. =")
 Output(1,14,⌊PHVAR(4))
@@ -603,7 +603,7 @@ Output(7,1,"TIME =")
 Output(7,8,⌊PHVAR(4))
 Output(8,25,"s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"TIME =")
 Output(1,8,⌊PHVAR(4))
@@ -613,7 +613,7 @@ Else
 Output(7,7,"INVALID INPUT")
 Output(8,5,"CHECK YOUR NUMBERS!)
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 Goto T4
 End
 End
@@ -622,7 +622,7 @@ Output(7,1,"TIME =")
 Output(7,8,⌊PHVAR(4))
 Output(8,25,"s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"TIME =")
 Output(1,8,⌊PHVAR(4))
@@ -652,7 +652,7 @@ Then
 Output(7,5,"ACCEL. CANNOT BE 0")
 Output(8,5,"CHECK YOUR NUMBERS!")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 Goto D5
 End
 round(((((⌊PHVAR(1))²)-((⌊PHVAR(2))²))/(2*(⌊PHVAR(3)))),6)→⌊PHVAR(4)
@@ -660,7 +660,7 @@ Output(7,1,"DIST. =")
 Output(7,9,⌊PHVAR(4))
 Output(8,25,"m")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"DIST. =")
 Output(1,9,⌊PHVAR(4))
@@ -684,7 +684,7 @@ Then
 Output(7,7,"INVALID INPUT")
 Output(8,5,"CHECK YOUR NUMBERS!)
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 Goto F5
 End
 round((√(((⌊PHVAR(2))²)+(2*(⌊PHVAR(3))*(⌊PHVAR(1))))),6)→⌊PHVAR(4)
@@ -692,7 +692,7 @@ Output(7,1,"FINAL V. =")
 Output(7,12,⌊PHVAR(4))
 Output(8,23,"m/s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"FINAL V. =")
 Output(1,12,⌊PHVAR(4))
@@ -716,7 +716,7 @@ Then
 Output(7,7,"INVALID INPUT")
 Output(8,5,"CHECK YOUR NUMBERS!)
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 Goto I5
 End
 round((√(((⌊PHVAR(2))²)-(2*(⌊PHVAR(3))*(⌊PHVAR(1))))),6)→⌊PHVAR(4)
@@ -724,7 +724,7 @@ Output(7,1,"INITIAL V. =")
 Output(7,14,⌊PHVAR(4))
 Output(8,23,"m/s")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"INITIAL V. =")
 Output(1,14,⌊PHVAR(4))
@@ -748,7 +748,7 @@ Then
 Output(7,5,"DIST. CANNOT BE 0")
 Output(8,5,"CHECK YOUR NUMBERS!")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 Goto T1
 End
 round(((((⌊PHVAR(2))²)-((⌊PHVAR(3))²))/(2*(⌊PHVAR(1)))),6)→⌊PHVAR(4)
@@ -756,7 +756,7 @@ Output(7,1,"ACCEL. =")
 Output(7,10,⌊PHVAR(4))
 Output(8,22,"m/s²")
 Output(10,4,"PRESS ENTER TO CONTINUE")
-Pause
+Pause 
 ClrHome
 Output(1,1,"ACCEL. =")
 Output(1,10,⌊PHVAR(4))
@@ -773,7 +773,7 @@ Output(7,1,"AND REMEMBER THE ORDER")
 Output(9,1,"(USUALLY THE NEGATIVE")
 Output(10,1,"IS WRONG)")
 Output(10,16,"PRESS ENTER")
-Pause
+Pause 
 ClrHome
 Menu("WHICH ANSWER DO YOU WANT?","THE FIRST ONE",L4,"THE SECOND ONE",L3)
 While 0
