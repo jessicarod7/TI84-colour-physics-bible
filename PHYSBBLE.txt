@@ -12,7 +12,7 @@ Output(7,4,"BY CAMERON RODRIGUEZ")
 Output(9,5,"ROD.CAM2014+DEV AT")
 Output(10,10,"GMAIL.COM")
 Wait 2
-SetUpEditor PHVAR
+SetUpEditor PHVAR,⌊1,⌊2,⌊3,⌊4,⌊5,⌊6
 5→dim(⌊PHVAR)
 
 Lbl GO
@@ -27,7 +27,7 @@ Output(4,8,"DON'T HAVE.")
 Output(5,4,"(NOT WHAT YOU WANT)")
 Output(7,2,"ALL ANSWERS WILL DISPLAY")
 Output(8,3,"6 DIGITS AFTER DECIMAL")
-Output(10,2,"VARIABLE U  WILL BE USED")
+Output(10,1,"VARIABLE (U) WILL BE USED")
 Wait 3
 ClrHome
 While 0
@@ -101,6 +101,7 @@ Then
 Output(8,6,"TIME CANNOT BE 0")
 Output(9,5,"CHECK YOUR NUMBERS!")
 Wait 2
+ClrHome
 Goto A1
 End
 round(((⌊PHVAR(1)-⌊PHVAR(2))/⌊PHVAR(3)),6)→⌊PHVAR(4)
@@ -131,6 +132,7 @@ Then
 Output(8,5,"ACCEL. CANNOT BE 0")
 Output(9,5,"CHECK YOUR NUMBERS!")
 Wait 2
+ClrHome
 Goto T1
 End
 round(((⌊PHVAR(1)-⌊PHVAR(2))/⌊PHVAR(3)),6)→⌊PHVAR(4)
@@ -159,7 +161,7 @@ Input "ACCEL.? (m/s²) ",U
 U→⌊PHVAR(2)
 Input "TIME? (s) ",U
 U→⌊PHVAR(3)
-round(((⌊PHVAR(1)*⌊PHVAR(2))+(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²))),6)→⌊PHVAR(4)
+round(((⌊PHVAR(1)*⌊PHVAR(3))+(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²))),6)→⌊PHVAR(4)
 Output(8,1,"DIST. =")
 Output(8,9,⌊PHVAR(4))
 Output(9,25,"m")
@@ -187,6 +189,7 @@ Then
 Output(8,6,"TIME CANNOT BE 0")
 Output(9,5,"CHECK YOUR NUMBERS!")
 Wait 2
+ClrHome
 Goto I2
 End
 round(((⌊PHVAR(1)-(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²)))/⌊PHVAR(3)),6)→⌊PHVAR(4)
@@ -217,6 +220,7 @@ Then
 Output(8,6,"TIME CANNOT BE 0")
 Output(9,5,"CHECK YOUR NUMBERS!")
 Wait 2
+ClrHome
 Goto A2
 End
 round(((2*(⌊PHVAR(1)-(⌊PHVAR(2)*⌊PHVAR(3))))/((⌊PHVAR(3))²)),6)→⌊PHVAR(4)
@@ -267,11 +271,12 @@ End
 While 0
 "=CHECKS DISCRIMINANT="
 End
-If (√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3))))<0
+If (((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))<0
 Then
 Output(8,7,"INVALID INPUT")
 Output(9,5,"CHECK YOUR NUMBERS!)
 Wait 2
+ClrHome
 Goto T2
 End
 While 0
@@ -309,7 +314,7 @@ Input "ACCEL.? (m/s²) ",U
 U→⌊PHVAR(2)
 Input "TIME? (s) ",U
 U→⌊PHVAR(3)
-round(((⌊PHVAR(1)*⌊PHVAR(2))-(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²))),6)→⌊PHVAR(4)
+round(((⌊PHVAR(1)*⌊PHVAR(3))-(0.5*⌊PHVAR(2)*((⌊PHVAR(3))²))),6)→⌊PHVAR(4)
 Output(8,1,"DIST. =")
 Output(8,9,⌊PHVAR(4))
 Output(9,25,"m")
@@ -355,7 +360,7 @@ Disp "FIND ACCEL., NO INIT. V."
 Disp " "
 Input "DIST.? (m) ",U
 U→⌊PHVAR(1)
-Input "INITIAL V.? (m/s) ",U
+Input "FINAL V.? (m/s) ",U
 U→⌊PHVAR(2)
 Input "TIME? (s) ",U
 U→⌊PHVAR(3)
@@ -423,7 +428,7 @@ End
 While 0
 "=CHECKS DISCRIMINANT="
 End
-If (√(((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3))))<0
+If (((⌊PHVAR(2))²)-(4*⌊PHVAR(1)*⌊PHVAR(3)))<0
 Then
 Output(8,7,"INVALID INPUT")
 Output(9,5,"CHECK YOUR NUMBERS!)
@@ -500,7 +505,7 @@ Output(1,12,⌊PHVAR(4))
 Output(2,23,"m/s")
 Goto SA
 End
-round((((2*(⌊PHVAR(1))/(⌊PHVAR(3)))-(⌊PHVAR(2))),6)→⌊PHVAR(4)
+round((((2*(⌊PHVAR(1)))/(⌊PHVAR(3)))-(⌊PHVAR(2))),6)→⌊PHVAR(4)
 Output(8,1,"FINAL V. =")
 Output(8,12,⌊PHVAR(4))
 Output(9,23,"m/s")
@@ -725,7 +730,7 @@ Output(6,1,"SELECTING YOUR ANSWER")
 Output(7,1,"AND REMEMBER THE ORDER")
 Output(9,1,"(GENERALLY THE NEGATIVE")
 Output(10,1,"ANSWER IS WRONG)")
-Wait 3
+Wait 5
 ClrHome
 Menu("WHICH ANSWER DO YOU WANT?","THE FIRST ONE",L4,"THE SECOND ONE",L3)
 While 0
