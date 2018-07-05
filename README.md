@@ -23,17 +23,17 @@ To download the program, follow [this link](https://github.com/cam-rod/TI84-colo
 If you wish to build the program yourself from the text files attached, follow the instructions below. Due to the formatting of the text, the program must be compiled with [TI Connect CE](https://education.ti.com/en/products/computer-software/ti-connect-ce-sw), but feel free to reformat for the IDE of your choice:
 
 1. Download and extract the ```.zip``` file from the button above or with [this link](https://github.com/cam-rod/TI84-colour-physics-bible/archive/master.zip).
-2. Open the corresponding folder and the file ```PHYSBBLE-TI-84-XXXXXX.txt```. Copy all of the text in the file.
-3. Open *TI Connect CE* and create a new program under the *Program Editor Menu*. Paste the text in the empty space. Give the program a variable name and save the file. Follow the installation instructions [above](https://github.com/cam-rod/TI84-colour-physics-bible#installing-the-physics-bible) to send the program to your calculator.
+2. Open the corresponding folder and the file ```PHYSBBLE-TI-84+XXXXXX.txt```. Copy all of the text in the file.
+3. Open *TI Connect CE* and create a new program under the *Program Editor* menu. Paste the text in the empty space. Give the program a variable name and save the file. Follow the installation instructions [above](https://github.com/cam-rod/TI84-colour-physics-bible#installing-the-physics-bible) to send the program to your calculator.
 
 ## Contributing
 
 If you would like to contribute, please follow the guidelines below:
 
 - All pull requests should be rebased onto the latest release version on the master branch first.
-- Test your changes **and** general functionality on a TI-84+CE before submitting a pull request.
+- Test your changes **and** general functionality on a TI-84+CE or TI-84+C SE before submitting a pull request.
 - Bug reports should include as much detail as possible; move the program into RAM and use ```Goto``` on the error page to provide context.
 
 ## License
 
-This software is licensed under the MIT License, which can be found [here](LICENSE), or the online template [here](https://opensource.org/licenses/MIT). If you use this repository in other projects, include the aforementioned license, with attribution to myself.
+This software is licensed under the MIT License, which can be found [here](LICENSE), or the online template [here](https://opensource.org/licenses/MIT). If you use this repository in other projects, include the aforementioned license, with attribution to myself. While not necessary, I strongly encourage you to open source your own work to the community.
