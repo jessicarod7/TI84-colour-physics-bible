@@ -28,11 +28,7 @@ If you wish to build the program yourself from the text files attached, follow t
 
 ## Contributing
 
-If you would like to contribute, please follow the guidelines below:
-
-- All pull requests should be rebased onto the latest release version on the master branch first.
-- Test your changes **and** general functionality on a TI-84+CE or TI-84+C SE before submitting a pull request.
-- Bug reports should include as much detail as possible; move the program into RAM and use ```Goto``` on the error page to provide context.
+[Read the contributing guidelines here.](CONTRIBUTING.md)
 
 ## License
 

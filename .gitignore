@@ -1,3 +1,6 @@
 # Don't track local files used for dev work
 *.jpg
 *.vscode
+
+# Don't track folder with example photos
+Ex/**
