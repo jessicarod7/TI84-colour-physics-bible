@@ -45,7 +45,7 @@ While 0
 End
 ```
 
-- **Update the ```.8xp```program file with each commit.** This is the file that will be posted in the final release,and will be used if others download the source code, so it is important that the program is ready to run. ***The program variable name is always ```PHYSBBLE```.***
+- **Update the ```.8xp```program file with each commit.** This is the file that will be posted in the final release, and will be used if others download the source code, so it is important that the program is ready to run. ***The program variable name is always ```PHYSBBLE```.***
 
 ### Preparation for a Pull Request
 
